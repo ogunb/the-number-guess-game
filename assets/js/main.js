@@ -27,7 +27,7 @@
 		if (guessCount === 1 && userGuess === randomNumber){
 	 		lastResult.innerHTML = '<img src="assets/img/wow.svg">'
 			body.style.backgroundColor = "#c948ff";
-			lowOrHi.innerHTML = "WHAT?! HOW?!"+"<br/>"+"YOU? HOW?!"+"<br/>"+"WHAT KIND OF SORCERY IS THIS?!";
+			lowOrHi.innerHTML = "WHAT?! HOW?!"+"<br/>"+"HOW DID YOU DO IT?!"+"<br/>"+"WHAT KIND OF SORCERY IS THIS?!";
 			setGameOver();
 		}	else if (guessCount === 10) {
 				lastResult.innerHTML = '<img src="assets/img/sad.svg">'
