@@ -1,0 +1,190 @@
+/*GLOBAL*/
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	outline: none;
+	transition: ease-in-out 500ms;
+}
+body{
+	background: #f5f5f5;
+	font-family: Comfortaa;
+}
+p{
+	font-size: 1.3rem;
+	line-height: 32px;
+	letter-spacing: 3px;
+	text-align: justify;
+}
+h1{
+	font-size: 45px;
+	font-weight: 700;
+	color: #3b3b3b;
+	margin-bottom: 20px;
+	letter-spacing: 5px;
+}
+
+/*CSS*/
+
+.wrapper{
+	position: relative;
+	text-align: center;
+	max-width: calc(640px - 120px);
+	padding: 60px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%);
+	padding-top: 30px;
+}
+
+#lastResult{
+	max-width: 320px;
+	max-height: 320px;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+#expl{
+	color: #898888;
+	margin-bottom: 10px;
+}
+
+#lowOrHi, #guesses{
+	text-align: center;
+	color: #f7f7f7;
+}
+#guesses{
+	margin-bottom: 20px;
+}
+
+.guessField{
+	margin: 30px 0;
+	background: none;
+	outline: none;
+	border: 0;
+	border-bottom: 2px solid #5f5f5f;
+	text-align: center;
+	padding: 10px;
+	width: 240px;
+	color: #3b3b3b;
+	font-size: 1.3rem;
+}
+.guessField::placeholder{
+	color: #bfbebe;
+	font-weight: lighter;
+}
+
+.guessSubmit, button{
+	background: none;
+	outline: none;
+	text-align: center;
+	padding: 10px;
+	width: 240px;
+	background: #000;
+	color: #fff;
+	border: 0;
+	border-radius: 25px;
+	letter-spacing: 5px;
+	margin-bottom: 20px;
+	font-family: comfortaa
+}
+.yourGuesses{
+	color: #f7f7f7;
+	font-weight: 700;
+	text-align: center;
+}
+
+/*ANIMATE*/
+
+.leftEye{
+	animation: eyeLeft 5s ease-in-out infinite;
+}
+.rightEye{
+	animation: eyeRight 5s ease-in-out infinite;
+}
+.st6{
+	animation: smile 3s ease-in-out infinite;
+}
+.rotateThis{
+	transform-origin: center;
+	animation: rotateIt 3s linear infinite;
+}
+
+
+
+/*KEYFRAMES*/
+
+@keyframes rotateIt{
+	0%{
+		transform: rotate(0deg);
+	}
+	25%{
+		transform: rotate(-7deg);
+	}
+	75%{
+		transform: rotate(7deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+@keyframes smile{
+	0%{ 	stroke-width: 9;
+	}
+	50% {
+		stroke-width: 13
+	}
+	100%{
+		stroke-wdith: 9;
+	}
+}
+
+@keyframes eyeLeft{
+	0%{
+		cx: 117;
+		cy: 144;
+	}
+	25%{
+		cx: calc(117 - 7);
+		cy: calc(144 - 7);
+	}
+	50%{
+		cx: calc(117 - 14);
+		cy: 144;
+	}
+	75%{
+		cx: calc(117 - 7);
+		cy: calc(144 + 7);
+	}
+	100%{
+		cx: 117;
+		cy: 144;
+	}
+}
+
+@keyframes eyeRight{
+	0%{
+		cx: 248;
+		cy: 144;
+	}
+	25%{
+		cx: calc(248 - 7);
+		cy: calc(144 - 7);
+	}
+	50%{
+		cx: calc(248 - 14);
+		cy: 144;
+	}
+	75%{
+		cx: calc(248 - 7);
+		cy: calc(144 + 7);
+	}
+	100%{
+		cx: 248;
+		cy: 144;
+	}
+}

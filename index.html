@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>guess the number!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div id="lastResult">
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 350 350" style="enable-background:new 0 0 350 350;" xml:space="preserve">
+			<style type="text/css">
+				.st0{opacity:0.67;}
+				.st1{fill:#808080;}
+				.st2{fill:#F2F2F2;}
+				.st3{fill:#333333;}
+				.st4{opacity:0.56;}
+				.st5{fill:#CCCCCC;}
+				.st6{fill:none;stroke:#333333;stroke-width:9;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+				.st7{fill:none;stroke:#FFFFFF;stroke-width:11;stroke-linecap:round;stroke-miterlimit:10;}
+				.st8{opacity:0.97;fill:none;stroke:#FFFFFF;stroke-width:12;stroke-linecap:round;stroke-miterlimit:10;}
+			</style>
+			<g>
+				<g class="st0">
+					<ellipse class="st1" cx="173" cy="319" rx="78" ry="7"/>
+				</g>
+				<g class="rotateThis">
+					<path class="st2" d="M175,306c-79.4,0-144-64.6-144-144C31,82.6,95.6,18,175,18c79.4,0,144,64.6,144,144
+						C319,241.4,254.4,306,175,306z"/>
+					<path class="st3" d="M175,24c76.2,0,138,61.8,138,138s-61.8,138-138,138S37,238.2,37,162S98.8,24,175,24 M175,12
+						c-40.1,0-77.7,15.6-106.1,43.9C40.6,84.3,25,121.9,25,162s15.6,77.7,43.9,106.1c28.3,28.3,66,43.9,106.1,43.9
+						s77.7-15.6,106.1-43.9c28.3-28.3,43.9-66,43.9-106.1s-15.6-77.7-43.9-106.1C252.7,27.6,215.1,12,175,12L175,12z"/>
+									<g class="st4">
+					<path class="st5" d="M313,162c0,76.2-61.8,138-138,138S37,238.2,37,162c11,78,61.8,109,138,109S303,248,313,162z"/>
+				</g>
+				<circle class="st3 leftEye" cx="117" cy="144" r="10"/>
+				<circle class="st3 rightEye" cx="248" cy="144" r="10"/>
+				<path class="st6" d="M151.2,200.5c1.3,11.7,11.1,20.6,22.5,21c12,0.4,22.6-8.8,24-21"/>
+				<path class="st7" d="M268.5,109.5"/>
+				<path class="st7" d="M247,81"/>
+				<path class="st8" d="M227.5,66.5c2.2,0,19.6,1.9,30.5,19.5"/>
+				</g>
+			</g>
+			</svg>
+		</div>
+
+		<h1 class="header">guess the number!</h1>
+
+		<p id="expl">I have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. I'll tell you if you gotta guess higher or lower!</p>
+		<p id="lowOrHi"></p>
+
+		<div class="form">
+		  <input type="text" id="guessField" class="guessField" placeholder="enter your guess!"><br/>
+		  <input type="submit" value="submit" class="guessSubmit">
+		</div>
+		<p class="yourGuesses"></p>
+		<p id="guesses"></p>
+
+
+	</div>
+
+	<script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+</html>
