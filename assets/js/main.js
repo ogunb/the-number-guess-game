@@ -28,16 +28,18 @@
 	 		lastResult.innerHTML = '<img src="assets/img/wow.svg">'
 			body.style.backgroundColor = "#c948ff";
 			lowOrHi.innerHTML = "WHAT?! HOW?!"+"<br/>"+"YOU? HOW?!"+"<br/>"+"WHAT KIND OF SORCERY IS THIS?!";
+			yourGuesses.textContent = "Your firts guess was true :O "
 			setGameOver();
 		}	else if (guessCount === 10) {
 				lastResult.innerHTML = '<img src="assets/img/sad.svg">'
 				body.style.backgroundColor = "#f86a6a";
 				lowOrHi.innerHTML = "You tried 10 times and failed."+"<br/>"+"You made me sad...";
+				guesses.insertAdjacentHTML('beforeend', '<br/>'+'The correct answer was: '+randomNumber);
 		    	setGameOver();
 	 		} else if (userGuess === randomNumber){
 	 				lastResult.innerHTML = '<img src="assets/img/gj.svg">'
 					body.style.backgroundColor = "#6af874";
-					lowOrHi.innerHTML = "YES! That is the right answer!"+"<br/>"+"Good job my friend!";
+					lowOrHi.innerHTML = "Yes! That is the right answer!"+"<br/>"+"Good job my friend!";
 					setGameOver();
 	 		}	else{
 		 			lastResult.innerHTML = '<img src="assets/img/sad.svg">'
@@ -62,8 +64,8 @@
     	checkGuess();
     }
     else if (guessCount === 10){
-    	setGameOver();
-    	guessField.removeEventListener('keypress');
+    	checkGuess();
+    	guessField.removeEventListener('keypress', guessField);
     }
   });
 
