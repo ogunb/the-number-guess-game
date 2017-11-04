@@ -97,4 +97,8 @@
 	  lastResult.innerHTML = '<img src="assets/img/normal.svg"/>'
 
 	  randomNumber = Math.floor(Math.random() * 100) + 1;
+
+
+
+	  
 	}
